@@ -1,6 +1,9 @@
 function [R] = fibonacci_por_sucesion(n)
   %Función de fibonacci iterativa. f0 = f1 = 1; n > 2
-  
+  if (n == 1 || n == 0)
+    R = 1;
+    return;
+  endif
   R = [1 2];
  %R(1) = 1;
  %R(2) = 2;

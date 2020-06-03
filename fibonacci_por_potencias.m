@@ -3,6 +3,6 @@ function [r] = fibonacci_por_potencias(n)
   if(n < 0)
     r = -1;
   else
-    r = (1/sqrt(5))*(((1+sqrt(5))/2)**(n+1) - ((1-sqrt(5))/2)**(n+1));
+    r = round((1/sqrt(5))*(((1+sqrt(5))/2)**(n+1) - ((1-sqrt(5))/2)**(n+1)));
   endif
 endfunction
